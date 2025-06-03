@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Growth Partner Pros - Turn AI Disruption into Your Greatest Advantage</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white py-4 px-6 shadow-md fixed w-full z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="h-10 w-10 rounded-full gradient-bg flex items-center justify-center">
+                    <span class="text-white font-bold text-xl">GP</span>
+                </div>
+                <span class="text-navy font-bold text-xl">Growth Partner Pros</span>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link text-navy font-medium active" onclick="showSection('home')">Home</a>
+                <a href="#services" class="nav-link text-navy font-medium" onclick="showSection('services')">Services</a>
+                <a href="#about" class="nav-link text-navy font-medium" onclick="showSection('about')">About Us</a>
+                <a href="#blog" class="nav-link text-navy font-medium" onclick="showSection('blog')">Blog</a>
+                <a href="#contact" class="nav-link text-navy font-medium" onclick="showSection('contact')">Contact</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-navy focus:outline-none" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed top-0 left-0 h-full w-64 bg-navy z-50 shadow-lg p-6">
+        <div class="flex justify-between items-center mb-8">
+            <div class="flex items-center space-x-2">
+                <div class="h-10 w-10 rounded-full gradient-bg flex items-center justify-center">
+                    <span class="text-white font-bold text-xl">GP</span>
+                </div>
+                <span class="text-white font-bold text-xl">GPP</span>
+            </div>
+            <button class="text-white focus:outline-none" onclick="toggleMobileMenu()">
+                <i class="fas fa-times text-2xl"></i>
+            </button>
+        </div>
+        <div class="flex flex-col space-y-6">
+            <a href="#home" class="text-white font-medium" onclick="showSectionAndCloseMobileMenu('home')">Home</a>
+            <a href="#services" class="text-white font-medium" onclick="showSectionAndCloseMobileMenu('services')">Services</a>
+            <a href="#about" class="text-white font-medium" onclick="showSectionAndCloseMobileMenu('about')">About Us</a>
+            <a href="#blog" class="text-white font-medium" onclick="showSectionAndCloseMobileMenu('blog')">Blog</a>
+            <a href="#contact" class="text-white font-medium" onclick="showSectionAndCloseMobileMenu('contact')">Contact</a>
+        </div>
+    </div>
+    
+    <div class="pt-20">
+        <!-- Home Section -->
+        <section id="home" class="page-section active">
+            <div class="hero-section py-20 px-6 text-white">
+                <div class="container mx-auto">
+                    <div class="max-w-3xl">
+                        <h1 id="hero-headline" class="text-4xl md:text-6xl font-bold mb-4">TURN AI DISRUPTION INTO YOUR GREATEST ADVANTAGE</h1>
+                        <div class="section-divider"></div>
+                        <p id="hero-subheadline" class="text-xl md:text-2xl mb-8">AI-Driven Transformation for Leaders & Organizations</p>
+                        <p id="hero-description" class="text-lg mb-8">Growth Partner Pros helps forward-thinking leaders and businesses harness the power of AI to achieve 10x productivity, streamline operations, and create competitive advantage in today's rapidly evolving landscape.</p>
+                        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                            <a href="#contact" id="hero-primary-btn" class="btn-primary" onclick="showSection('contact')">BOOK A FREE CONSULTATION</a>
+                            <a href="#services" id="hero-secondary-btn" class="btn-outline bg-transparent text-white border-white" onclick="showSection('services')">EXPLORE SERVICES</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Value Propositions -->
+            <div class="py-16 px-6 bg-soft-gray">
+                <div class="container mx-auto">
+                    <div class="text-center mb-16">
+                        <h2 id="value-props-title" class="text-3xl md:text-4xl font-bold mb-4">UNLOCK YOUR AI POTENTIAL</h2>
+                        <div class="section-divider mx-auto"></div>
+                    </div>
+                    
+                    <div id="value-props-cards" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <!-- Cards will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Results Section -->
+            <div class="py-16 px-6">
+                <div class="container mx-auto">
+                    <div class="text-center mb-16">
+                        <h2 id="results-title" class="text-3xl md:text-4xl font-bold mb-4">THE 10X DIFFERENCE</h2>
+                        <div class="section-divider mx-auto"></div>
+                        <p id="results-description" class="text-xl">Our clients consistently achieve remarkable results:</p>
+                    </div>
+                    
+                    <div id="results-stats" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                        <!-- Stats will be populated by JavaScript -->
+                    </div>
+                    
+                    <!-- Testimonial -->
+                    <div class="max-w-3xl mx-auto">
+                        <div class="testimonial-card p-8 shadow-lg">
+                            <div class="text-2xl text-coral mb-4">"</div>
+                            <p id="testimonial-quote" class="text-lg italic mb-6">This training was life-changing. It has completely transformed how I think about work. I was overwhelmed with the amount of things I needed to do. Now I have frameworks, tools, and support to make it manageable and actually fun. I feel powerful again.</p>
+                            <div id="testimonial-author" class="font-bold">— Startup Founder</div>
+                        </div>
+                        
+                        <div class="mt-8 text-center">
+                            <a href="#about" id="testimonial-btn" class="btn-outline" onclick="showSection('about')">SEE MORE SUCCESS STORIES</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- About Caroline Short -->
+            <div class="py-16 px-6 bg-navy text-white">
+                <div class="container mx-auto">
+                    <div class="max-w-4xl mx-auto">
+                        <h2 id="about-caroline-title" class="text-3xl md:text-4xl font-bold mb-4">MEET CAROLINE HINTON</h2>
+                        <div class="section-divider"></div>
+                        <p id="about-caroline-subtitle" class="text-xl mb-8">Award-winning executive-turned-AI strategist with over 20 years of leadership experience at Microsoft, PwC, Thomson Reuters, and Google.</p>
+                        <p id="about-caroline-description" class="mb-8">Caroline helps leaders and organizations embrace disruption, unlock 10x growth, and transform not only their operations—but their lives.</p>
+                        <a href="#about" id="about-caroline-btn" class="btn-primary" onclick="showSection('about')">LEARN MORE ABOUT CAROLINE</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Services Section -->
+        <section id="services" class="page-section">
+            <div class="hero-section py-20 px-6 text-white">
+                <div class="container mx-auto">
+                    <h1 id="services-title" class="text-4xl md:text-6xl font-bold mb-4">SERVICES</h1>
+                    <div class="section-divider"></div>
+                    <p id="services-description" class="text-xl md:text-2xl mb-8">Transform your business with our comprehensive AI solutions designed for leaders and organizations ready to embrace the future.</p>
+                </div>
+            </div>
+            
+            <div class="py-16 px-6">
+                <div class="container mx-auto">
+                    <div id="services-list" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <!-- Services will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section id="about" class="page-section">
+            <div class="hero-section py-20 px-6 text-white">
+                <div class="container mx-auto">
+                    <h1 id="about-title" class="text-4xl md:text-6xl font-bold mb-4">ABOUT CAROLINE HINTON</h1>
+                    <div class="section-divider"></div>
+                    <p id="about-description" class="text-xl md:text-2xl mb-8">Award-winning executive-turned-AI strategist with over 20 years of leadership experience.</p>
+                </div>
+            </div>
+            
+            <div class="py-16 px-6">
+                <div class="container mx-auto">
+                    <div class="max-w-4xl mx-auto">
+                        <div id="about-bio" class="prose prose-lg mb-16">
+                            <!-- Bio will be populated by JavaScript -->
+                        </div>
+                        
+                        <h3 class="text-3xl font-bold mb-8 text-center">Success Stories</h3>
+                        <div id="success-stories" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <!-- Success stories will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Blog Section -->
+        <section id="blog" class="page-section">
+            <div class="hero-section py-20 px-6 text-white">
+                <div class="container mx-auto">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">BLOG</h1>
+                    <div class="section-divider"></div>
+                    <p class="text-xl md:text-2xl mb-8">Insights, strategies, and stories about AI transformation</p>
+                </div>
+            </div>
+            
+            <div class="py-16 px-6">
+                <div class="container mx-auto">
+                    <div id="blog-posts" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Blog posts will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="page-section">
+            <div class="hero-section py-20 px-6 text-white">
+                <div class="container mx-auto">
+                    <h1 id="contact-title" class="text-4xl md:text-6xl font-bold mb-4">CONTACT US</h1>
+                    <div class="section-divider"></div>
+                    <p id="contact-description" class="text-xl md:text-2xl mb-8">Ready to transform your business with AI? Get in touch to schedule your free consultation.</p>
+                </div>
+            </div>
+            
+            <div class="py-16 px-6">
+                <div class="container mx-auto">
+                    <div class="max-w-4xl mx-auto">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                            <!-- Contact Info -->
+                            <div>
+                                <h3 class="text-2xl font-bold mb-6">Get In Touch</h3>
+                                <div class="space-y-4">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-envelope text-coral mr-4"></i>
+                                        <span id="contact-email">caroline@growthpartnerpros.com</span>
+                                    </div>
+                                    <div id="contact-phone-container" class="flex items-center" style="display: none;">
+                                        <i class="fas fa-phone text-coral mr-4"></i>
+                                        <span id="contact-phone"></span>
+                                    </div>
+                                </div>
+                                
+                                <!-- Calendly Embed -->
+                                <div id="calendly-container" class="mt-8">
+                                    <h4 class="text-xl font-bold mb-4">Schedule a Free Consultation</h4>
+                                    <div id="calendly-embed">
+                                        <!-- Calendly widget will be embedded here -->
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Contact Form -->
+                            <div>
+                                <h3 id="contact-form-title" class="text-2xl font-bold mb-6">Get Your Free Consultation</h3>
+                                <p id="contact-form-description" class="mb-6">Fill out the form below and we'll get back to you within 24 hours to discuss how AI can transform your business.</p>
+                                
+                                <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" class="space-y-6">
+                                    <input type="hidden" name="form-name" value="contact" />
+                                    <p style="display: none;">
+                                        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                                    </p>
+                                    
+                                    <div>
+                                        <label for="name" class="block text-sm font-medium mb-2">Name *</label>
+                                        <input type="text" id="name" name="name" required class="form-input">
+                                    </div>
+                                    
+                                    <div>
+                                        <label for="email" class="block text-sm font-medium mb-2">Email *</label>
+                                        <input type="email" id="email" name="email" required class="form-input">
+                                    </div>
+                                    
+                                    <div>
+                                        <label for="company" class="block text-sm font-medium mb-2">Company</label>
+                                        <input type="text" id="company" name="company" class="form-input">
+                                    </div>
+                                    
+                                    <div>
+                                        <label for="message" class="block text-sm font-medium mb-2">Message *</label>
+                                        <textarea id="message" name="message" rows="5" required class="form-input"></textarea>
+                                    </div>
+                                    
+                                    <button type="submit" id="contact-form-submit" class="btn-primary w-full">Send Message</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="bg-navy text-white py-12 px-6">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-10">
+                <div class="flex items-center space-x-2 mb-6 md:mb-0">
+                    <div class="h-10 w-10 rounded-full gradient-bg flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">GP</span>
+                    </div>
+                    <span class="text-white font-bold text-xl">Growth Partner Pros</span>
+                </div>
+                
+                <div class="flex space-x-8">
+                    <a href="#home" onclick="showSection('home')" class="hover:text-coral transition-colors">Home</a>
+                    <a href="#services" onclick="showSection('services')" class="hover:text-coral transition-colors">Services</a>
+                    <a href="#about" onclick="showSection('about')" class="hover:text-coral transition-colors">About</a>
+                    <a href="#blog" onclick="showSection('blog')" class="hover:text-coral transition-colors">Blog</a>
+                    <a href="#contact" onclick="showSection('contact')" class="hover:text-coral transition-colors">Contact</a>
+                </div>
+                
+                <div id="social-links" class="flex space-x-6 mt-6 md:mt-0">
+                    <!-- Social links will be populated by JavaScript -->
+                </div>
+            </div>
+            
+            <hr class="border-gray-700 mb-10">
+            
+            <div class="text-center text-sm text-gray-400">
+                <p>&copy; 2025 Growth Partner Pros. All rights reserved.</p>
+                <p class="mt-2">Turn AI disruption into your greatest advantage.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
+

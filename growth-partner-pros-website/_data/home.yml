@@ -1,0 +1,42 @@
+hero:
+  headline: "TURN AI DISRUPTION INTO YOUR GREATEST ADVANTAGE"
+  subheadline: "AI-Driven Transformation for Leaders & Organizations"
+  description: "Growth Partner Pros helps forward-thinking leaders and businesses harness the power of AI to achieve 10x productivity, streamline operations, and create competitive advantage in today's rapidly evolving landscape."
+  primary_button: "BOOK A FREE CONSULTATION"
+  secondary_button: "EXPLORE SERVICES"
+  background_image: ""
+
+value_props:
+  title: "UNLOCK YOUR AI POTENTIAL"
+  cards:
+    - title: "FOR LEADERS & PROFESSIONALS"
+      description: "Future-proof your career, master AI tools, and become irreplaceable in the age of automation."
+      link_text: "Learn More"
+    - title: "FOR ORGANIZATIONS"
+      description: "Transform operations, drive innovation, and achieve scalable growth through strategic AI implementation."
+      link_text: "Learn More"
+
+results:
+  title: "THE 10X DIFFERENCE"
+  description: "Our clients consistently achieve remarkable results:"
+  stats:
+    - number: "40-60%"
+      description: "productivity improvements in key processes"
+    - number: "90%"
+      description: "reduction in time spent on repetitive tasks"
+    - number: "10x"
+      description: "output without increasing headcount"
+    - number: "ROI"
+      description: "measurable within weeks, not months"
+
+testimonial:
+  quote: "This training was life-changing. It has completely transformed how I think about work. I was overwhelmed with the amount of things I needed to do. Now I have frameworks, tools, and support to make it manageable and actually fun. I feel powerful again."
+  author: "— Startup Founder"
+  button_text: "SEE MORE SUCCESS STORIES"
+
+about_caroline:
+  title: "MEET CAROLINE HINTON"
+  subtitle: "Award-winning executive-turned-AI strategist with over 20 years of leadership experience at Microsoft, PwC, Thomson Reuters, and Google."
+  description: "Caroline helps leaders and organizations embrace disruption, unlock 10x growth, and transform not only their operations—but their lives."
+  button_text: "LEARN MORE ABOUT CAROLINE"
+

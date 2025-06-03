@@ -1,0 +1,48 @@
+title: "SERVICES"
+description: "Transform your business with our comprehensive AI solutions designed for leaders and organizations ready to embrace the future."
+
+services:
+  - name: "AI Strategy & Implementation"
+    description: "Comprehensive AI strategy development and implementation roadmap tailored to your organization's goals and capabilities."
+    icon: "fas fa-brain"
+    price: "Custom Pricing"
+    features:
+      - "AI readiness assessment"
+      - "Custom implementation roadmap"
+      - "Technology stack recommendations"
+      - "ROI projections and metrics"
+      - "Change management support"
+
+  - name: "Executive AI Training"
+    description: "Intensive training programs for leaders to master AI tools and become irreplaceable in the age of automation."
+    icon: "fas fa-user-tie"
+    price: "Starting at $2,500"
+    features:
+      - "Personalized AI tool mastery"
+      - "Leadership in the AI age"
+      - "Strategic decision-making frameworks"
+      - "Productivity optimization"
+      - "Ongoing support and coaching"
+
+  - name: "Organizational AI Transformation"
+    description: "End-to-end transformation services to integrate AI across your entire organization for maximum impact."
+    icon: "fas fa-building"
+    price: "Custom Pricing"
+    features:
+      - "Process automation identification"
+      - "Team training and upskilling"
+      - "AI tool integration"
+      - "Performance monitoring"
+      - "Continuous optimization"
+
+  - name: "AI Productivity Consulting"
+    description: "Specialized consulting to achieve 10x productivity improvements through strategic AI implementation."
+    icon: "fas fa-rocket"
+    price: "Starting at $5,000"
+    features:
+      - "Workflow analysis and optimization"
+      - "Custom AI solution development"
+      - "Team productivity training"
+      - "Automation implementation"
+      - "Results measurement and reporting"
+

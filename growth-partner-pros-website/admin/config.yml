@@ -1,0 +1,183 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "_data/home.yml"
+        fields:
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Main Headline", name: "headline", widget: "string"}
+              - {label: "Subheadline", name: "subheadline", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Primary Button Text", name: "primary_button", widget: "string"}
+              - {label: "Secondary Button Text", name: "secondary_button", widget: "string"}
+              - {label: "Background Image", name: "background_image", widget: "image", required: false}
+          
+          - label: "Value Propositions"
+            name: "value_props"
+            widget: "object"
+            fields:
+              - {label: "Section Title", name: "title", widget: "string"}
+              - label: "Cards"
+                name: "cards"
+                widget: "list"
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Description", name: "description", widget: "text"}
+                  - {label: "Link Text", name: "link_text", widget: "string"}
+          
+          - label: "Results Section"
+            name: "results"
+            widget: "object"
+            fields:
+              - {label: "Section Title", name: "title", widget: "string"}
+              - {label: "Section Description", name: "description", widget: "string"}
+              - label: "Statistics"
+                name: "stats"
+                widget: "list"
+                fields:
+                  - {label: "Number", name: "number", widget: "string"}
+                  - {label: "Description", name: "description", widget: "string"}
+          
+          - label: "Testimonial"
+            name: "testimonial"
+            widget: "object"
+            fields:
+              - {label: "Quote", name: "quote", widget: "text"}
+              - {label: "Author", name: "author", widget: "string"}
+              - {label: "Button Text", name: "button_text", widget: "string"}
+          
+          - label: "About Caroline Section"
+            name: "about_caroline"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Button Text", name: "button_text", widget: "string"}
+
+      - label: "Services Page"
+        name: "services"
+        file: "_data/services.yml"
+        fields:
+          - {label: "Page Title", name: "title", widget: "string"}
+          - {label: "Page Description", name: "description", widget: "text"}
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            fields:
+              - {label: "Service Name", name: "name", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Icon", name: "icon", widget: "string"}
+              - {label: "Price", name: "price", widget: "string", required: false}
+              - label: "Features"
+                name: "features"
+                widget: "list"
+                field: {label: "Feature", name: "feature", widget: "string"}
+
+      - label: "About Page"
+        name: "about"
+        file: "_data/about.yml"
+        fields:
+          - {label: "Page Title", name: "title", widget: "string"}
+          - {label: "Page Description", name: "description", widget: "text"}
+          - {label: "Caroline's Bio", name: "bio", widget: "markdown"}
+          - {label: "Profile Image", name: "profile_image", widget: "image", required: false}
+          - label: "Success Stories"
+            name: "success_stories"
+            widget: "list"
+            fields:
+              - {label: "Quote", name: "quote", widget: "text"}
+              - {label: "Author", name: "author", widget: "string"}
+              - {label: "Company", name: "company", widget: "string", required: false}
+
+      - label: "Contact Page"
+        name: "contact"
+        file: "_data/contact.yml"
+        fields:
+          - {label: "Page Title", name: "title", widget: "string"}
+          - {label: "Page Description", name: "description", widget: "text"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Phone", name: "phone", widget: "string", required: false}
+          - {label: "Calendly URL", name: "calendly_url", widget: "string", required: false}
+          - label: "Contact Form"
+            name: "contact_form"
+            widget: "object"
+            fields:
+              - {label: "Form Title", name: "title", widget: "string"}
+              - {label: "Form Description", name: "description", widget: "text"}
+              - {label: "Submit Button Text", name: "submit_text", widget: "string"}
+
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Author", name: "author", widget: "string", default: "Caroline Hinton"}
+      - {label: "Featured Image", name: "featured_image", widget: "image", required: false}
+      - {label: "Excerpt", name: "excerpt", widget: "text"}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - label: "General Settings"
+        name: "general"
+        file: "_data/settings.yml"
+        fields:
+          - {label: "Site Title", name: "site_title", widget: "string"}
+          - {label: "Site Description", name: "site_description", widget: "text"}
+          - {label: "Logo", name: "logo", widget: "image", required: false}
+          - label: "Social Media"
+            name: "social"
+            widget: "object"
+            fields:
+              - {label: "LinkedIn URL", name: "linkedin", widget: "string", required: false}
+              - {label: "Twitter URL", name: "twitter", widget: "string", required: false}
+              - {label: "Instagram URL", name: "instagram", widget: "string", required: false}
+          - label: "SEO"
+            name: "seo"
+            widget: "object"
+            fields:
+              - {label: "Meta Keywords", name: "keywords", widget: "string", required: false}
+              - {label: "Google Analytics ID", name: "google_analytics", widget: "string", required: false}
+
+  - name: "media"
+    label: "Media & Videos"
+    files:
+      - label: "Videos"
+        name: "videos"
+        file: "_data/videos.yml"
+        fields:
+          - label: "Homepage Videos"
+            name: "homepage"
+            widget: "list"
+            required: false
+            fields:
+              - {label: "Video Title", name: "title", widget: "string"}
+              - {label: "Video URL (YouTube/Vimeo)", name: "url", widget: "string"}
+              - {label: "Thumbnail", name: "thumbnail", widget: "image", required: false}
+          - label: "About Page Videos"
+            name: "about"
+            widget: "list"
+            required: false
+            fields:
+              - {label: "Video Title", name: "title", widget: "string"}
+              - {label: "Video URL (YouTube/Vimeo)", name: "url", widget: "string"}
+              - {label: "Thumbnail", name: "thumbnail", widget: "image", required: false}
+
