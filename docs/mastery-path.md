@@ -11,7 +11,7 @@ Members open `/mastery-path`.
 - Sign-in is a magic link sent with Resend. There is no password.
 - Only addresses on the email allowlist can sign in.
 - The home library has 12 posts: class materials for classes 1–9, Class 2 office hours, Class 3 office hours, and Additional Assets for the overall course.
-- Class recordings and the two office-hours recordings are ScreenPal embeds. Office hours are their own posts. They are not nested inside the class materials posts.
+- Class recordings and the two office-hours recordings are ScreenPal embeds. Office hours are their own posts. Their companion PDFs (filenames containing "Office Hours") stay on those office-hours posts, not on the Class 2 or Class 3 materials posts.
 - Additional Assets is files only. It has no video.
 - Attachment downloads live in Replit App Storage and are served to a signed-in member. They are not stored in this git repository.
 

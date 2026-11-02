@@ -4,15 +4,15 @@ Mirror of the cohort library for the Replit `/mastery-path` member area. This is
 
 12 posts. 58 attachments. Recordings are ScreenPal embeds on `growthpartners.screencasthost.com` (unlisted, autoplay off). Eleven recordings use a 16:9 frame (padding-top 56.25%). Class 3 Office Hours is the exception (aspect 1.662338, padding-top 60.15625%).
 
-Class 2 and Class 3 office-hours recordings are separate posts. The office-hours companion PDFs stay on the class materials posts, where they were attached. Do not nest the office-hours player inside the class post.
+Class 2 and Class 3 office hours are separate posts: the office-hours recording and any filename containing "Office Hours" (the companion PDFs) belong on those posts. The class materials posts do not include those companions, and they do not embed the office-hours player.
 
 | # | Post | Recording | Files |
 | --- | --- | --- | --- |
 | 1 | Class 1 - Complete Set of Materials | Class 1, 1:20:05, `cOjYnKnvs3P` | 5 |
-| 2 | Class 2 - Complete Set of Materials | Class 2 only, 1:14:54, `cOjU3MnwlS7` | 6 |
-| 3 | Class 2 Office Hours | Office hours only, 23:45, `cOjuqInwXiH` | 0 |
-| 4 | Class 3 - Complete Set of Materials | Class 3 only, 1:05:27, `cOQnFKnw0AN` | 6 |
-| 5 | Class 3 Office Hours | Office hours only, 20:13, `cOQfrQnwUmX` | 0 |
+| 2 | Class 2 - Complete Set of Materials | Class 2 only, 1:14:54, `cOjU3MnwlS7` | 5 |
+| 3 | Class 2 Office Hours | Office hours only, 23:45, `cOjuqInwXiH` | 1 |
+| 4 | Class 3 - Complete Set of Materials | Class 3 only, 1:05:27, `cOQnFKnw0AN` | 5 |
+| 5 | Class 3 Office Hours | Office hours only, 20:13, `cOQfrQnwUmX` | 1 |
 | 6 | Class 4 - Complete Set of Materials | Class 4, 1:16:29, `cOQIhxnwJX0` | 5 |
 | 7 | Class 5 - Complete Set of Materials | Class 5, 1:05:12, `cOQv1QnxwFU` | 5 |
 | 8 | Class 6 - Complete Set of Materials | Class 6, 1:10:49, `cO6lebnycID` | 6 |
@@ -39,10 +39,9 @@ ScreenPal title: Class 1 - AI Mastery Path - Beacon August 2026.
 
 Supporting documents for Class 2 attached; recording linked above.
 
-ScreenPal title: Class 2 - AI Mastery Path - Beacon August 2026. Do not embed `cOjuqInwXiH` here.
+ScreenPal title: Class 2 - AI Mastery Path - Beacon August 2026. Do not embed `cOjuqInwXiH` here. The Office Hours companion PDF is on post 3.
 
 - [ ] Class 2 Rubric Scoring Prompt Pack - AI Mastery Path.pdf (868.0 KB)
-- [ ] Class 2 Office Hours Companion Guide - AI Mastery Path.pdf (900.7 KB)
 - [ ] Class 2 Post-Class Participant Guidebook - AI Mastery Path.pdf (1.2 MB)
 - [ ] Your Questions, Answered · Class 2 · AI Mastery Path™.pdf (1.1 MB)
 - [ ] Beacon August Cohort Class 2 Slides Final.pdf (363.2 KB)
@@ -52,18 +51,19 @@ ScreenPal title: Class 2 - AI Mastery Path - Beacon August 2026. Do not embed `c
 
 Recording for Class 2 Office Hours.
 
-ScreenPal title: Class 2 - Office Hours - AI Mastery Path. Embed only. No files.
+ScreenPal title: Class 2 - Office Hours - AI Mastery Path.
+
+- [ ] Class 2 Office Hours Companion Guide - AI Mastery Path.pdf (900.7 KB)
 
 ## 4. Class 3 - Complete Set of Materials
 
 Links to recordings for Class 3 and office hours above; all supporting documents attached.
 
-ScreenPal title: Class 3 - AI Mastery Path - Beacon August 2026. The office-hours player is post 5, not this post.
+ScreenPal title: Class 3 - AI Mastery Path - Beacon August 2026. The office-hours player and the Office Hours companion PDF are on post 5, not this post.
 
 - [ ] Class 3 Slides - AI Mastery Path - Beacon Cohort Aug 2026.pdf (275.3 KB)
 - [ ] Your Questions, Answered · Class 3 · AI Mastery Path™.pdf (1.2 MB)
 - [ ] Class 3 Final Participant Guidebook - AI Mastery Path (Fillable).pdf (1.2 MB)
-- [ ] Class 3 Office Hours - Companion Guide - AI Mastery Path (Fillable).pdf (797.8 KB)
 - [ ] Class 3 Prompt Pack v2 · The Diagnostic Deep Dive · AI Mastery Path™ (Fillable).pdf (772.2 KB)
 - [ ] Class 3 Sample Use Cases by Role FINAL.pdf (813.2 KB)
 
@@ -71,7 +71,9 @@ ScreenPal title: Class 3 - AI Mastery Path - Beacon August 2026. The office-hour
 
 Recording for Class 3 Office Hours.
 
-ScreenPal title: Class 3 Office Hours - AI Mastery Path. Embed only. No files. This is the non-16:9 recording.
+ScreenPal title: Class 3 Office Hours - AI Mastery Path. This is the non-16:9 recording.
+
+- [ ] Class 3 Office Hours - Companion Guide - AI Mastery Path (Fillable).pdf (797.8 KB)
 
 ## 6. Class 4 - Complete Set of Materials
 
